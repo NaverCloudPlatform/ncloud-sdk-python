@@ -1,0 +1,12 @@
+coverage>=4.0.3
+nose>=1.3.7
+pluggy>=0.3.1
+py>=1.4.31
+randomize>=0.13
+ncloud-apikey >= 1.0.0
+ncloud-server >= 1.0.0
+ncloud-loadbalancer >= 1.0.0
+ncloud-autoscaling >= 1.0.0
+ncloud-monitoring >= 1.0.0
+ncloud-cdn >= 1.0.0
+ncloud-clouddb >= 1.0.0

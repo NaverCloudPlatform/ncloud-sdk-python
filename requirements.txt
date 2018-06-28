@@ -1,0 +1,12 @@
+certifi >= 14.05.14
+six >= 1.10
+python_dateutil >= 2.5.3
+setuptools >= 21.0.0
+urllib3 >= 1.15.1
+ncloud-apikey >= 0.9.0
+ncloud-server >= 1.0.0
+ncloud-loadbalancer >= 1.0.0
+ncloud-autoscaling >= 1.0.0
+ncloud-monitoring >= 1.0.0
+ncloud-cdn >= 1.0.0
+ncloud-clouddb >= 1.0.0
