@@ -12,8 +12,12 @@ class PropertiesParser(object):
                     continue
 
                 split_str = line.strip().split('=')
+
+                if len(split_str) < 2 :
+                    continue
+
                 prop_list.append((split_str[0].strip(), split_str[1].strip()))
 
         return prop_list
 
-#print(PropertiesParser().parse("/Users/user/.ncloud/configur"))
+#print(PropertiesParser().parse("/Users/user/.ncloud/configure"))
