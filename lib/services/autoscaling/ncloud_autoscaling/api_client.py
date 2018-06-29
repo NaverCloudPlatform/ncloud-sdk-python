@@ -51,6 +51,8 @@ class ApiClient(object):
         to the API
     """
 
+    reload(sys)
+    sys.setdefaultencoding('UTF-8')
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
