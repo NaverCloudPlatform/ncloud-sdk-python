@@ -12,7 +12,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "ncloud-loadbalancer"
-VERSION = "1.0.0"
+VERSION = "1.0.3"
 # To install the library, run the following
 #
 # python setup.py install
@@ -20,7 +20,7 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
+REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil", "ncloud-apikey >= 1.0.0"]
 
 setup(
     name=NAME,
