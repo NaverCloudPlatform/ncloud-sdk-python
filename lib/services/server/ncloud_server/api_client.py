@@ -52,7 +52,7 @@ class ApiClient(object):
     """
 
     reload(sys)
-    sys.setdefaultencoding('UTF-8')
+    sys.setdefaultencoding('utf-8')
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -151,7 +151,17 @@ class ApiClient(object):
                 value = body[key];
                 if key == "userData":
                     value = base64.b64encode(value)
-                serialized_body = serialized_body + key + "=" + value + "&"
+                if type(value) is list:
+                    index = 1
+                    for inner_value in value:
+                        if type(inner_value) is dict:
+                            for _inner_value in inner_value:
+                                serialized_body = serialized_body + key + "." + _inner_value + "=" + str(inner_value[_inner_value]) + "&"
+                        else:
+                            serialized_body = serialized_body + key + "." + str(index) + "=" + str(inner_value) + "&"
+                        index += 1
+                else:
+                    serialized_body = serialized_body + key + "=" + value + "&"
             body = serialized_body[:-1]
 
         # request url
