@@ -20,6 +20,7 @@ import hashlib
 import hmac
 import base64
 import time
+import sys
 
 # python 2 and python 3 compatibility library
 import six
@@ -531,9 +532,15 @@ class ApiClient(object):
             uri = uri[:-1]
         access_key = self.configuration.access_key
         secret_key = self.configuration.secret_key
-        secret_key = bytes(secret_key)
+        if (sys.version_info >= (3, 0)):
+            secret_key = bytes(secret_key, 'UTF-8')
+        else:
+            secret_key = bytes(secret_key)
         message = method + " " + uri + "\n" + timestamp + "\n" + access_key
-        message = bytes(message)
+        if (sys.version_info >= (3, 0)):
+            message = bytes(message, 'UTF-8')
+        else:
+            message = bytes(message)
         signingKey = base64.b64encode(hmac.new(secret_key, message, digestmod=hashlib.sha256).digest())
         return signingKey
 

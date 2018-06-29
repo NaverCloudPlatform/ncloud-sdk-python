@@ -1,7 +1,6 @@
 # coding: utf-8
 
 import os
-import properties_parser
 
 class NcloudKey :
 
@@ -26,7 +25,7 @@ class NcloudKey :
         if not os.path.exists(configure_filepath) :
             print('Please check configure file (linux : $HOME/.ncloud/configure, Windows : %HOME%\.ncloud\configure)')
 
-        pp = properties_parser.PropertiesParser()
+        pp = PropertiesParser()
         prop_list = pp.parse(configure_filepath)
 
         return prop_list
@@ -52,5 +51,30 @@ class NcloudKey :
             "secret_key": NcloudKey.SECRET_KEY
         };
 
+
+class PropertiesParser(object):
+
+    def parse(self, filepath):
+        with open(filepath, 'r') as f:
+            lines = f.readlines()
+
+            prop_list = []
+            for line in lines:
+                if line == '' or len(line) < 3 or line[0] == "#" :
+                    continue
+
+                split_str = line.strip().split('=')
+
+                if len(split_str) < 2 :
+                    continue
+
+                prop_list.append((split_str[0].strip(), split_str[1].strip()))
+
+        return prop_list
+
+
 # print(NcloudKey().keys())
 # print(NcloudKey({'access_key':'abc', 'secret_key':'def'}).keys())
+
+# print(PropertiesParser().parse("/Users/user/.ncloud/configure"))
+
