@@ -146,7 +146,6 @@ class ApiClient(object):
         # body
         if body:
             body = self.sanitize_for_serialization(body)
-            print(body)
             serialized_body = "";
             for key in body:
                 value = body[key];
@@ -164,7 +163,6 @@ class ApiClient(object):
                 else:
                     serialized_body = serialized_body + key + "=" + str(value) + "&"
             body = serialized_body[:-1]
-            print(body)
 
         # request url
         url = self.configuration.host + resource_path
