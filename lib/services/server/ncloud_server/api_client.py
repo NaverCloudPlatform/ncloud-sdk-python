@@ -146,6 +146,7 @@ class ApiClient(object):
         # body
         if body:
             body = self.sanitize_for_serialization(body)
+            print(body)
             serialized_body = "";
             for key in body:
                 value = body[key];
@@ -156,13 +157,14 @@ class ApiClient(object):
                     for inner_value in value:
                         if type(inner_value) is dict:
                             for _inner_value in inner_value:
-                                serialized_body = serialized_body + key + "." + _inner_value + "=" + str(inner_value[_inner_value]) + "&"
+                                serialized_body = serialized_body + key + "." + str(index) + "." + _inner_value + "=" + str(inner_value[_inner_value]) + "&"
                         else:
                             serialized_body = serialized_body + key + "." + str(index) + "=" + str(inner_value) + "&"
                         index += 1
                 else:
-                    serialized_body = serialized_body + key + "=" + value + "&"
+                    serialized_body = serialized_body + key + "=" + str(value) + "&"
             body = serialized_body[:-1]
+            print(body)
 
         # request url
         url = self.configuration.host + resource_path

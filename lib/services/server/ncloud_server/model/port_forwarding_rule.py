@@ -33,29 +33,29 @@ class PortForwardingRule(object):
     swagger_types = {
         'port_forwarding_external_port': 'int',
         'port_forwarding_internal_port': 'int',
-        'server_instance': 'ServerInstance'
+        'server_instance_no': 'ServerInstanceNo'
     }
 
     attribute_map = {
         'port_forwarding_external_port': 'portForwardingExternalPort',
         'port_forwarding_internal_port': 'portForwardingInternalPort',
-        'server_instance': 'serverInstance'
+        'server_instance_no': 'serverInstanceNo'
     }
 
-    def __init__(self, port_forwarding_external_port=None, port_forwarding_internal_port=None, server_instance=None):  # noqa: E501
+    def __init__(self, port_forwarding_external_port=None, port_forwarding_internal_port=None, server_instance_no=None):  # noqa: E501
         """PortForwardingRule - a model defined in Swagger"""  # noqa: E501
 
         self._port_forwarding_external_port = None
         self._port_forwarding_internal_port = None
-        self._server_instance = None
+        self._server_instance_no = None
         self.discriminator = None
 
         if port_forwarding_external_port is not None:
             self.port_forwarding_external_port = port_forwarding_external_port
         if port_forwarding_internal_port is not None:
             self.port_forwarding_internal_port = port_forwarding_internal_port
-        if server_instance is not None:
-            self.server_instance = server_instance
+        if server_instance_no is not None:
+            self.server_instance_no = server_instance_no
 
     @property
     def port_forwarding_external_port(self):
@@ -104,27 +104,27 @@ class PortForwardingRule(object):
         self._port_forwarding_internal_port = port_forwarding_internal_port
 
     @property
-    def server_instance(self):
-        """Gets the server_instance of this PortForwardingRule.  # noqa: E501
+    def server_instance_no(self):
+        """Gets the server_instance_no of this PortForwardingRule.  # noqa: E501
 
         서버인스턴스  # noqa: E501
 
-        :return: The server_instance of this PortForwardingRule.  # noqa: E501
+        :return: The server_instance_no of this PortForwardingRule.  # noqa: E501
         :rtype: ServerInstance
         """
-        return self._server_instance
+        return self._server_instance_no
 
-    @server_instance.setter
-    def server_instance(self, server_instance):
-        """Sets the server_instance of this PortForwardingRule.
+    @server_instance_no.setter
+    def server_instance_no(self, server_instance_no):
+        """Sets the server_instance_no of this PortForwardingRule.
 
         서버인스턴스  # noqa: E501
 
-        :param server_instance: The server_instance of this PortForwardingRule.  # noqa: E501
-        :type: ServerInstance
+        :param server_instance_no: The server_instance_no of this PortForwardingRule.  # noqa: E501
+        :type: ServerInstanceNo
         """
 
-        self._server_instance = server_instance
+        self._server_instance_no = server_instance_no
 
     def to_dict(self):
         """Returns the model properties as a dict"""
