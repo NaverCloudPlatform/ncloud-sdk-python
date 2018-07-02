@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **return_code** | **str** |  | [optional] 
 **return_message** | **str** |  | [optional] 
 **total_rows** | **int** |  | [optional] 
-**block_storage_instance_list** | [**list[BlockStorageSnapshotInstance]**](BlockStorageSnapshotInstance.md) |  | [optional] 
+**block_storage_snapshot_instance_list** | [**list[BlockStorageSnapshotInstance]**](BlockStorageSnapshotInstance.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
