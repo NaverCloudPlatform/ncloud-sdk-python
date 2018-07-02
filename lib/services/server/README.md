@@ -18,7 +18,7 @@ If the python package is hosted on Github, you can install directly from Github
 ```sh
 pip install ncloud-server --user
 ```
-(you may need to run `pip` with root permission: `sudo pip install ncloud-server --user`)
+(you may need to run `pip` with root permission: `sudo pip install ncloud-server --user)
 
 Then import the package:
 ```python
