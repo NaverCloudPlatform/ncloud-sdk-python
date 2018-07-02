@@ -156,7 +156,7 @@ class ApiClient(object):
                     for inner_value in value:
                         if type(inner_value) is dict:
                             for _inner_value in inner_value:
-                                serialized_body = serialized_body + quote(key) + "." + quote(_inner_value) + "=" + quote(str(inner_value[_inner_value])) + "&"
+                                serialized_body = serialized_body + quote(key) + "." + str(index) + "." + quote(_inner_value) + "=" + quote(str(inner_value[_inner_value])) + "&"
                         else:
                             serialized_body = serialized_body + quote(key) + "." + str(index) + "=" + quote(str(inner_value)) + "&"
                         index += 1
