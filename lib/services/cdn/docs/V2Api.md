@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -166,7 +166,7 @@ configuration = swagger_client.Configuration()
 configuration.access_key = "YOUR ACCESS KEY"
 configuration.secret_key = "YOUR SECRET KEY"
 api_instance = ncloud_cdn.V2Api(ncloud_cdn.ApiClient(configuration))
-get_global_cdn_purge_history_list_request = ncloud_cdn.GetCdnPlusPurgeHistoryListRequest() # GetCdnPlusPurgeHistoryListRequest | getGlobalCdnPurgeHistoryListRequest
+get_global_cdn_purge_history_list_request = ncloud_cdn.GetGlobalCdnPurgeHistoryListRequest() # GetGlobalCdnPurgeHistoryListRequest | getGlobalCdnPurgeHistoryListRequest
 
 try:
     api_response = api_instance.get_global_cdn_purge_history_list(get_global_cdn_purge_history_list_request)
@@ -179,7 +179,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **get_global_cdn_purge_history_list_request** | [**GetCdnPlusPurgeHistoryListRequest**](GetCdnPlusPurgeHistoryListRequest.md)| getGlobalCdnPurgeHistoryListRequest | 
+ **get_global_cdn_purge_history_list_request** | [**GetGlobalCdnPurgeHistoryListRequest**](GetGlobalCdnPurgeHistoryListRequest.md)| getGlobalCdnPurgeHistoryListRequest | 
 
 ### Return type
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
