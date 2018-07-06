@@ -121,7 +121,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='CreateCloudDBInstanceResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -217,7 +217,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='DeleteCloudDBServerInstanceResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -313,7 +313,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetCloudDBConfigGroupListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -409,7 +409,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetCloudDBImageProductListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -505,7 +505,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetCloudDBInstanceListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -601,7 +601,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetCloudDBProductListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -697,7 +697,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='RebootCloudDBServerInstanceResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
