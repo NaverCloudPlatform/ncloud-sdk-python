@@ -11,7 +11,7 @@ import io
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "ncloud-sdk"
-VERSION = "1.0.6"
+VERSION = "1.0.7"
 # To install the library, run the following
 #
 # python setup.py install
