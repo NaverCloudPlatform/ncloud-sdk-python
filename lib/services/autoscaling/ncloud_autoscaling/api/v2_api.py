@@ -121,7 +121,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='CreateAutoScalingGroupResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -217,7 +217,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='CreateLaunchConfigurationResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -313,7 +313,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='DeleteAutoScalingGroupResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -409,7 +409,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='DeleteAutoScalingLaunchConfigurationRequest',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -505,7 +505,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='DeletePolicyResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -601,7 +601,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='DeleteScheduledActionResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -697,7 +697,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='ExecutePolicyResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -793,7 +793,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetAdjustmentTypeListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -889,7 +889,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetAutoScalingActivityLogListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -985,7 +985,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetAutoScalingConfigurationLogListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1081,7 +1081,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetAutoScalingGroupListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1177,7 +1177,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetAutoScalingPolicyListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1273,7 +1273,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetLaunchConfigurationListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1369,7 +1369,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetScalingProcessTypeListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1465,7 +1465,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='GetScheduledActionListResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1561,7 +1561,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='PutScalingPolicyResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1657,7 +1657,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='PutScheduledUpdateGroupActionResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1753,7 +1753,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='ResumeProcessesResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1849,7 +1849,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='SetDesiredCapacityResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1945,7 +1945,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='SetServerInstanceHealthResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2041,7 +2041,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='SuspendProcessesResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2137,7 +2137,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='TerminateServerInstanceInAutoScalingGroupResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2233,7 +2233,7 @@ class V2Api(object):
             files=local_var_files,
             response_type='UpdateAutoScalingGroupResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            _async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

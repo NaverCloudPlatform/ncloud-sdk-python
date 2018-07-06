@@ -51,8 +51,9 @@ class ApiClient(object):
         to the API
     """
 
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
+    if sys.version_info[0] < 3:
+        reload(sys)
+        sys.setdefaultencoding('utf-8')
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -299,7 +300,7 @@ class ApiClient(object):
     def call_api(self, resource_path, method,
                  path_params=None, query_params=None, header_params=None,
                  body=None, post_params=None, files=None,
-                 response_type=None, auth_settings=None, async=None,
+                 response_type=None, auth_settings=None, _async=None,
                  _return_http_data_only=None, collection_formats=None,
                  _preload_content=True, _request_timeout=None):
         """Makes the HTTP request (synchronous) and returns deserialized data.
@@ -338,7 +339,7 @@ class ApiClient(object):
             If parameter async is False or missing,
             then the method will return the response directly.
         """
-        if not async:
+        if not _async:
             return self.__call_api(resource_path, method,
                                    path_params, query_params, header_params,
                                    body, post_params, files,
@@ -544,12 +545,12 @@ class ApiClient(object):
             uri = uri[:-1]
         access_key = self.configuration.access_key
         secret_key = self.configuration.secret_key
-        if (sys.version_info >= (3, 0)):
+        if sys.version_info[0] >= 3:
             secret_key = bytes(secret_key, 'UTF-8')
         else:
             secret_key = bytes(secret_key)
         message = method + " " + uri + "\n" + timestamp + "\n" + access_key
-        if (sys.version_info >= (3, 0)):
+        if sys.version_info[0] >= 3:
             message = bytes(message, 'UTF-8')
         else:
             message = bytes(message)
