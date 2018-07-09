@@ -84,12 +84,12 @@ except ApiException as e:
 
 Services | Documentation | Install Command
 ------------ | ------------- | -------------
-*Server* | [**Server**](lib/services/server/README.md) | pip install ncloud-server
-*Loadbalancer* | [**Loadbalancer**](lib/services/loadbalancer/README.md) | pip install ncloud-loadbalancer
-*Autoscaling* | [**Autoscaling**](lib/services/autoscaling/README.md) | pip install ncloud-autoscaling
-*Monitoring* | [**Monitoring**](lib/services/monitoring/README.md) | pip install ncloud-monitoring
-*CDN* | [**CDN**](lib/services/cdn/README.md) | pip install ncloud-cdn
-*CloudDB* | [**CloudDB**](lib/services/clouddb/README.md) | pip install ncloud-clouddb
+*Server* | [**Server**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/server/README.md) | pip install ncloud-server
+*Loadbalancer* | [**Loadbalancer**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/loadbalancer/README.md) | pip install ncloud-loadbalancer
+*Autoscaling* | [**Autoscaling**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/autoscaling/README.md) | pip install ncloud-autoscaling
+*Monitoring* | [**Monitoring**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/monitoring/README.md) | pip install ncloud-monitoring
+*CDN* | [**CDN**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/cdn/README.md) | pip install ncloud-cdn
+*CloudDB* | [**CloudDB**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/clouddb/README.md) | pip install ncloud-clouddb
 
 
 ### License
