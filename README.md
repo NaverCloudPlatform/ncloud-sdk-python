@@ -12,7 +12,7 @@ pip install ncloud-sdk --user
 ```
 
 #### Requirements.
-Python 2.7 and 3.6+
+Python 2.7 and 3.4+
 
 ## 시작하기
 
