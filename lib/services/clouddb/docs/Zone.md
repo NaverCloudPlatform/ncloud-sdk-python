@@ -4,8 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **zone_no** | **str** | 존(Zone)번호 | [optional] 
+**zone_code** | **str** | 존(Zone)코드 | [optional] 
 **zone_name** | **str** | 존(Zone)명 | [optional] 
 **zone_description** | **str** | 존(Zone)설명 | [optional] 
+**region_no** | **str** | 리전(Region)번호 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

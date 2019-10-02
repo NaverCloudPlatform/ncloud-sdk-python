@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**certificate_name** | **str** | 인증서명 | 
 **private_key** | **str** | 비밀키 | 
 **public_key_certificate** | **str** | 공개키인증서 | 
 **certificate_chain** | **str** | 체인인증서 | [optional] 

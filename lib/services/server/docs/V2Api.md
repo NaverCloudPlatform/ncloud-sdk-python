@@ -7,40 +7,55 @@ Method | HTTP request | Description
 [**add_nas_volume_access_control**](V2Api.md#add_nas_volume_access_control) | **POST** /addNasVolumeAccessControl | 
 [**add_port_forwarding_rules**](V2Api.md#add_port_forwarding_rules) | **POST** /addPortForwardingRules | 
 [**associate_public_ip_with_server_instance**](V2Api.md#associate_public_ip_with_server_instance) | **POST** /associatePublicIpWithServerInstance | 
+[**attach_block_storage_instance**](V2Api.md#attach_block_storage_instance) | **POST** /attachBlockStorageInstance | 
+[**attach_network_interface**](V2Api.md#attach_network_interface) | **POST** /attachNetworkInterface | 
 [**change_nas_volume_size**](V2Api.md#change_nas_volume_size) | **POST** /changeNasVolumeSize | 
 [**change_server_instance_spec**](V2Api.md#change_server_instance_spec) | **POST** /changeServerInstanceSpec | 
 [**create_block_storage_instance**](V2Api.md#create_block_storage_instance) | **POST** /createBlockStorageInstance | 
+[**create_block_storage_snapshot_instance**](V2Api.md#create_block_storage_snapshot_instance) | **POST** /createBlockStorageSnapshotInstance | 
+[**create_instance_tags**](V2Api.md#create_instance_tags) | **POST** /createInstanceTags | 
 [**create_login_key**](V2Api.md#create_login_key) | **POST** /createLoginKey | 
 [**create_member_server_image**](V2Api.md#create_member_server_image) | **POST** /createMemberServerImage | 
 [**create_nas_volume_instance**](V2Api.md#create_nas_volume_instance) | **POST** /createNasVolumeInstance | 
+[**create_network_interface**](V2Api.md#create_network_interface) | **POST** /createNetworkInterface | 
 [**create_public_ip_instance**](V2Api.md#create_public_ip_instance) | **POST** /createPublicIpInstance | 
 [**create_server_instances**](V2Api.md#create_server_instances) | **POST** /createServerInstances | 
 [**delete_block_storage_instances**](V2Api.md#delete_block_storage_instances) | **POST** /deleteBlockStorageInstances | 
+[**delete_block_storage_snapshot_instances**](V2Api.md#delete_block_storage_snapshot_instances) | **POST** /deleteBlockStorageSnapshotInstances | 
+[**delete_instance_tags**](V2Api.md#delete_instance_tags) | **POST** /deleteInstanceTags | 
 [**delete_login_key**](V2Api.md#delete_login_key) | **POST** /deleteLoginKey | 
 [**delete_member_server_images**](V2Api.md#delete_member_server_images) | **POST** /deleteMemberServerImages | 
 [**delete_nas_volume_instance**](V2Api.md#delete_nas_volume_instance) | **POST** /deleteNasVolumeInstance | 
+[**delete_network_interface**](V2Api.md#delete_network_interface) | **POST** /deleteNetworkInterface | 
 [**delete_port_forwarding_rules**](V2Api.md#delete_port_forwarding_rules) | **POST** /deletePortForwardingRules | 
 [**delete_public_ip_instances**](V2Api.md#delete_public_ip_instances) | **POST** /deletePublicIpInstances | 
+[**detach_block_storage_instances**](V2Api.md#detach_block_storage_instances) | **POST** /detachBlockStorageInstances | 
+[**detach_network_interface**](V2Api.md#detach_network_interface) | **POST** /detachNetworkInterface | 
 [**disassociate_public_ip_from_server_instance**](V2Api.md#disassociate_public_ip_from_server_instance) | **POST** /disassociatePublicIpFromServerInstance | 
 [**get_access_control_group_list**](V2Api.md#get_access_control_group_list) | **POST** /getAccessControlGroupList | 
 [**get_access_control_group_server_instance_list**](V2Api.md#get_access_control_group_server_instance_list) | **POST** /getAccessControlGroupServerInstanceList | 
 [**get_access_control_rule_list**](V2Api.md#get_access_control_rule_list) | **POST** /getAccessControlRuleList | 
 [**get_block_storage_instance_list**](V2Api.md#get_block_storage_instance_list) | **POST** /getBlockStorageInstanceList | 
 [**get_block_storage_snapshot_instance_list**](V2Api.md#get_block_storage_snapshot_instance_list) | **POST** /getBlockStorageSnapshotInstanceList | 
+[**get_instance_tag_list**](V2Api.md#get_instance_tag_list) | **POST** /getInstanceTagList | 
 [**get_login_key_list**](V2Api.md#get_login_key_list) | **POST** /getLoginKeyList | 
 [**get_member_server_image_list**](V2Api.md#get_member_server_image_list) | **POST** /getMemberServerImageList | 
 [**get_nas_volume_instance_list**](V2Api.md#get_nas_volume_instance_list) | **POST** /getNasVolumeInstanceList | 
 [**get_nas_volume_instance_rating_list**](V2Api.md#get_nas_volume_instance_rating_list) | **POST** /getNasVolumeInstanceRatingList | 
+[**get_network_interface_list**](V2Api.md#get_network_interface_list) | **POST** /getNetworkInterfaceList | 
 [**get_port_forwarding_rule_list**](V2Api.md#get_port_forwarding_rule_list) | **POST** /getPortForwardingRuleList | 
+[**get_private_subnet_instance_list**](V2Api.md#get_private_subnet_instance_list) | **POST** /getPrivateSubnetInstanceList | 
 [**get_public_ip_instance_list**](V2Api.md#get_public_ip_instance_list) | **POST** /getPublicIpInstanceList | 
 [**get_public_ip_target_server_instance_list**](V2Api.md#get_public_ip_target_server_instance_list) | **POST** /getPublicIpTargetServerInstanceList | 
 [**get_raid_list**](V2Api.md#get_raid_list) | **POST** /getRaidList | 
 [**get_region_list**](V2Api.md#get_region_list) | **POST** /getRegionList | 
 [**get_root_password**](V2Api.md#get_root_password) | **POST** /getRootPassword | 
+[**get_root_password_server_instance_list**](V2Api.md#get_root_password_server_instance_list) | **POST** /getRootPasswordServerInstanceList | 
 [**get_server_image_product_list**](V2Api.md#get_server_image_product_list) | **POST** /getServerImageProductList | 
 [**get_server_instance_list**](V2Api.md#get_server_instance_list) | **POST** /getServerInstanceList | 
 [**get_server_product_list**](V2Api.md#get_server_product_list) | **POST** /getServerProductList | 
 [**get_zone_list**](V2Api.md#get_zone_list) | **POST** /getZoneList | 
+[**import_login_key**](V2Api.md#import_login_key) | **POST** /importLoginKey | 
 [**reboot_server_instances**](V2Api.md#reboot_server_instances) | **POST** /rebootServerInstances | 
 [**recreate_server_instance**](V2Api.md#recreate_server_instance) | **POST** /recreateServerInstance | 
 [**remove_nas_volume_access_control**](V2Api.md#remove_nas_volume_access_control) | **POST** /removeNasVolumeAccessControl | 
@@ -185,6 +200,96 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **attach_block_storage_instance**
+> AttachBlockStorageInstanceResponse attach_block_storage_instance(attach_block_storage_instance_request)
+
+
+
+블록스토리지인스턴스할당
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+attach_block_storage_instance_request = ncloud_server.AttachBlockStorageInstanceRequest() # AttachBlockStorageInstanceRequest | attachBlockStorageInstanceRequest
+
+try:
+    api_response = api_instance.attach_block_storage_instance(attach_block_storage_instance_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->attach_block_storage_instance: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **attach_block_storage_instance_request** | [**AttachBlockStorageInstanceRequest**](AttachBlockStorageInstanceRequest.md)| attachBlockStorageInstanceRequest | 
+
+### Return type
+
+[**AttachBlockStorageInstanceResponse**](AttachBlockStorageInstanceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **attach_network_interface**
+> AttachNetworkInterfaceResponse attach_network_interface(attach_network_interface_request)
+
+
+
+Network Interface Attach
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+attach_network_interface_request = ncloud_server.AttachNetworkInterfaceRequest() # AttachNetworkInterfaceRequest | attachNetworkInterfaceRequest
+
+try:
+    api_response = api_instance.attach_network_interface(attach_network_interface_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->attach_network_interface: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **attach_network_interface_request** | [**AttachNetworkInterfaceRequest**](AttachNetworkInterfaceRequest.md)| attachNetworkInterfaceRequest | 
+
+### Return type
+
+[**AttachNetworkInterfaceResponse**](AttachNetworkInterfaceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **change_nas_volume_size**
 > ChangeNasVolumeSizeResponse change_nas_volume_size(change_nas_volume_size_request)
 
@@ -312,6 +417,96 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CreateBlockStorageInstanceResponse**](CreateBlockStorageInstanceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_block_storage_snapshot_instance**
+> CreateBlockStorageSnapshotInstanceResponse create_block_storage_snapshot_instance(create_block_storage_snapshot_instance_request)
+
+
+
+블록스토리지스냅샷인스턴스생성
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+create_block_storage_snapshot_instance_request = ncloud_server.CreateBlockStorageSnapshotInstanceRequest() # CreateBlockStorageSnapshotInstanceRequest | createBlockStorageSnapshotInstanceRequest
+
+try:
+    api_response = api_instance.create_block_storage_snapshot_instance(create_block_storage_snapshot_instance_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->create_block_storage_snapshot_instance: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **create_block_storage_snapshot_instance_request** | [**CreateBlockStorageSnapshotInstanceRequest**](CreateBlockStorageSnapshotInstanceRequest.md)| createBlockStorageSnapshotInstanceRequest | 
+
+### Return type
+
+[**CreateBlockStorageSnapshotInstanceResponse**](CreateBlockStorageSnapshotInstanceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_instance_tags**
+> CreateInstanceTagsResponse create_instance_tags(create_instance_tags_request)
+
+
+
+인스턴스태그생성
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+create_instance_tags_request = ncloud_server.CreateInstanceTagsRequest() # CreateInstanceTagsRequest | createInstanceTagsRequest
+
+try:
+    api_response = api_instance.create_instance_tags(create_instance_tags_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->create_instance_tags: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **create_instance_tags_request** | [**CreateInstanceTagsRequest**](CreateInstanceTagsRequest.md)| createInstanceTagsRequest | 
+
+### Return type
+
+[**CreateInstanceTagsResponse**](CreateInstanceTagsResponse.md)
 
 ### HTTP request headers
 
@@ -455,6 +650,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **create_network_interface**
+> CreateNetworkInterfaceResponse create_network_interface(create_network_interface_request)
+
+
+
+Network Interface 생성
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+create_network_interface_request = ncloud_server.CreateNetworkInterfaceRequest() # CreateNetworkInterfaceRequest | createNetworkInterfaceRequest
+
+try:
+    api_response = api_instance.create_network_interface(create_network_interface_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->create_network_interface: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **create_network_interface_request** | [**CreateNetworkInterfaceRequest**](CreateNetworkInterfaceRequest.md)| createNetworkInterfaceRequest | 
+
+### Return type
+
+[**CreateNetworkInterfaceResponse**](CreateNetworkInterfaceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **create_public_ip_instance**
 > CreatePublicIpInstanceResponse create_public_ip_instance(create_public_ip_instance_request)
 
@@ -582,6 +822,96 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeleteBlockStorageInstancesResponse**](DeleteBlockStorageInstancesResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_block_storage_snapshot_instances**
+> DeleteBlockStorageSnapshotInstancesResponse delete_block_storage_snapshot_instances(delete_block_storage_snapshot_instances_request)
+
+
+
+블록스토리지스냅샷인스턴스삭제
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+delete_block_storage_snapshot_instances_request = ncloud_server.DeleteBlockStorageSnapshotInstancesRequest() # DeleteBlockStorageSnapshotInstancesRequest | deleteBlockStorageSnapshotInstancesRequest
+
+try:
+    api_response = api_instance.delete_block_storage_snapshot_instances(delete_block_storage_snapshot_instances_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->delete_block_storage_snapshot_instances: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **delete_block_storage_snapshot_instances_request** | [**DeleteBlockStorageSnapshotInstancesRequest**](DeleteBlockStorageSnapshotInstancesRequest.md)| deleteBlockStorageSnapshotInstancesRequest | 
+
+### Return type
+
+[**DeleteBlockStorageSnapshotInstancesResponse**](DeleteBlockStorageSnapshotInstancesResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_instance_tags**
+> DeleteInstanceTagsResponse delete_instance_tags(delete_instance_tags_request)
+
+
+
+인스턴스태그삭제
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+delete_instance_tags_request = ncloud_server.DeleteInstanceTagsRequest() # DeleteInstanceTagsRequest | deleteInstanceTagsRequest
+
+try:
+    api_response = api_instance.delete_instance_tags(delete_instance_tags_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->delete_instance_tags: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **delete_instance_tags_request** | [**DeleteInstanceTagsRequest**](DeleteInstanceTagsRequest.md)| deleteInstanceTagsRequest | 
+
+### Return type
+
+[**DeleteInstanceTagsResponse**](DeleteInstanceTagsResponse.md)
 
 ### HTTP request headers
 
@@ -725,6 +1055,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **delete_network_interface**
+> DeleteNetworkInterfaceResponse delete_network_interface(delete_network_interface_request)
+
+
+
+Network Interface 삭제
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+delete_network_interface_request = ncloud_server.DeleteNetworkInterfaceRequest() # DeleteNetworkInterfaceRequest | deleteNetworkInterfaceRequest
+
+try:
+    api_response = api_instance.delete_network_interface(delete_network_interface_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->delete_network_interface: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **delete_network_interface_request** | [**DeleteNetworkInterfaceRequest**](DeleteNetworkInterfaceRequest.md)| deleteNetworkInterfaceRequest | 
+
+### Return type
+
+[**DeleteNetworkInterfaceResponse**](DeleteNetworkInterfaceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **delete_port_forwarding_rules**
 > DeletePortForwardingRulesResponse delete_port_forwarding_rules(delete_port_forwarding_rules_request)
 
@@ -807,6 +1182,96 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**DeletePublicIpInstancesResponse**](DeletePublicIpInstancesResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **detach_block_storage_instances**
+> DetachBlockStorageInstancesResponse detach_block_storage_instances(detach_block_storage_instances_request)
+
+
+
+블록스토리지인스턴스할당해제
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+detach_block_storage_instances_request = ncloud_server.DetachBlockStorageInstancesRequest() # DetachBlockStorageInstancesRequest | detachBlockStorageInstancesRequest
+
+try:
+    api_response = api_instance.detach_block_storage_instances(detach_block_storage_instances_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->detach_block_storage_instances: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **detach_block_storage_instances_request** | [**DetachBlockStorageInstancesRequest**](DetachBlockStorageInstancesRequest.md)| detachBlockStorageInstancesRequest | 
+
+### Return type
+
+[**DetachBlockStorageInstancesResponse**](DetachBlockStorageInstancesResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **detach_network_interface**
+> DetachNetworkInterfaceResponse detach_network_interface(detach_network_interface_request)
+
+
+
+Network Interface Detach
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+detach_network_interface_request = ncloud_server.DetachNetworkInterfaceRequest() # DetachNetworkInterfaceRequest | detachNetworkInterfaceRequest
+
+try:
+    api_response = api_instance.detach_network_interface(detach_network_interface_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->detach_network_interface: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **detach_network_interface_request** | [**DetachNetworkInterfaceRequest**](DetachNetworkInterfaceRequest.md)| detachNetworkInterfaceRequest | 
+
+### Return type
+
+[**DetachNetworkInterfaceResponse**](DetachNetworkInterfaceResponse.md)
 
 ### HTTP request headers
 
@@ -1085,6 +1550,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_instance_tag_list**
+> GetInstanceTagListResponse get_instance_tag_list(get_instance_tag_list_request)
+
+
+
+인스턴스태그리스트조회
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+get_instance_tag_list_request = ncloud_server.GetInstanceTagListRequest() # GetInstanceTagListRequest | getInstanceTagListRequest
+
+try:
+    api_response = api_instance.get_instance_tag_list(get_instance_tag_list_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->get_instance_tag_list: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_instance_tag_list_request** | [**GetInstanceTagListRequest**](GetInstanceTagListRequest.md)| getInstanceTagListRequest | 
+
+### Return type
+
+[**GetInstanceTagListResponse**](GetInstanceTagListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_login_key_list**
 > GetLoginKeyListResponse get_login_key_list(get_login_key_list_request)
 
@@ -1265,6 +1775,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_network_interface_list**
+> GetNetworkInterfaceListResponse get_network_interface_list(get_network_interface_list_request)
+
+
+
+Network Interface 리스트조회
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+get_network_interface_list_request = ncloud_server.GetNetworkInterfaceListRequest() # GetNetworkInterfaceListRequest | getNetworkInterfaceListRequest
+
+try:
+    api_response = api_instance.get_network_interface_list(get_network_interface_list_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->get_network_interface_list: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_network_interface_list_request** | [**GetNetworkInterfaceListRequest**](GetNetworkInterfaceListRequest.md)| getNetworkInterfaceListRequest | 
+
+### Return type
+
+[**GetNetworkInterfaceListResponse**](GetNetworkInterfaceListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_port_forwarding_rule_list**
 > GetPortForwardingRuleListResponse get_port_forwarding_rule_list(get_port_forwarding_rule_list_request)
 
@@ -1302,6 +1857,51 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetPortForwardingRuleListResponse**](GetPortForwardingRuleListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_private_subnet_instance_list**
+> GetPrivateSubnetInstanceListResponse get_private_subnet_instance_list(get_private_subnet_instance_list_request)
+
+
+
+Private Subnet 인스턴스리스트조회
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+get_private_subnet_instance_list_request = ncloud_server.GetPrivateSubnetInstanceListRequest() # GetPrivateSubnetInstanceListRequest | getPrivateSubnetInstanceListRequest
+
+try:
+    api_response = api_instance.get_private_subnet_instance_list(get_private_subnet_instance_list_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->get_private_subnet_instance_list: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_private_subnet_instance_list_request** | [**GetPrivateSubnetInstanceListRequest**](GetPrivateSubnetInstanceListRequest.md)| getPrivateSubnetInstanceListRequest | 
+
+### Return type
+
+[**GetPrivateSubnetInstanceListResponse**](GetPrivateSubnetInstanceListResponse.md)
 
 ### HTTP request headers
 
@@ -1535,6 +2135,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_root_password_server_instance_list**
+> GetRootPasswordServerInstanceListResponse get_root_password_server_instance_list(get_root_password_server_instance_list_request)
+
+
+
+루트패스워드서버인스턴스리스트조회
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+get_root_password_server_instance_list_request = ncloud_server.GetRootPasswordServerInstanceListRequest() # GetRootPasswordServerInstanceListRequest | getRootPasswordServerInstanceListRequest
+
+try:
+    api_response = api_instance.get_root_password_server_instance_list(get_root_password_server_instance_list_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->get_root_password_server_instance_list: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_root_password_server_instance_list_request** | [**GetRootPasswordServerInstanceListRequest**](GetRootPasswordServerInstanceListRequest.md)| getRootPasswordServerInstanceListRequest | 
+
+### Return type
+
+[**GetRootPasswordServerInstanceListResponse**](GetRootPasswordServerInstanceListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_server_image_product_list**
 > GetServerImageProductListResponse get_server_image_product_list(get_server_image_product_list_request)
 
@@ -1707,6 +2352,51 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetZoneListResponse**](GetZoneListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **import_login_key**
+> ImportLoginKeyResponse import_login_key(import_login_key_request)
+
+
+
+로그인키IMPORT
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+import_login_key_request = ncloud_server.ImportLoginKeyRequest() # ImportLoginKeyRequest | importLoginKeyRequest
+
+try:
+    api_response = api_instance.import_login_key(import_login_key_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->import_login_key: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **import_login_key_request** | [**ImportLoginKeyRequest**](ImportLoginKeyRequest.md)| importLoginKeyRequest | 
+
+### Return type
+
+[**ImportLoginKeyResponse**](ImportLoginKeyResponse.md)
 
 ### HTTP request headers
 

@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **server_instance_type** | [**CommonCode**](CommonCode.md) | 서버인스턴스구분 | [optional] 
 **user_data** | **str** | 사용자데이타 | [optional] 
 **access_control_group_list** | [**list[AccessControlGroup]**](AccessControlGroup.md) | ACG리스트 | [optional] 
+**instance_tag_list** | [**list[InstanceTag]**](InstanceTag.md) | 인스턴스태그리스트 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

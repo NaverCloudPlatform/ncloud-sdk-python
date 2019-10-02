@@ -3,6 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**request_id** | **str** |  | [optional] 
+**return_code** | **str** |  | [optional] 
+**return_message** | **str** |  | [optional] 
 **port_forwarding_configuration_no** | **str** | 포트포워딩설정번호 | [optional] 
 **port_forwarding_public_ip** | **str** | 포트포워딩공인IP | [optional] 
 **zone** | [**Zone**](Zone.md) | ZONE | [optional] 

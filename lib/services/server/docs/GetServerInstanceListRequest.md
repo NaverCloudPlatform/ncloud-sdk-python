@@ -17,6 +17,8 @@ Name | Type | Description | Notes
 **sorted_by** | **str** | 소팅대상 | [optional] 
 **sorting_order** | **str** | 소팅순서 | [optional] 
 **server_instance_type_code_list** | **list[str]** | 서비인스턴스구분코드리스트 | [optional] 
+**tag_key_list** | **list[str]** | 태그키리스트 | [optional] 
+**tag_value_list** | **list[str]** | 태그값리스트 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
