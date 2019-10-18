@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **is_gzip_compression_use** | **bool** | GZIP압축사용여부 | [optional] 
 **caching_option_type_code** | **str** | 캐싱옵션구분코드 | [optional] 
 **is_error_contents_response_use** | **bool** | 오류내용응답사용여부 | [optional] 
-**caching_ttl_time** | **str** | TTL캐싱 | [optional] 
+**caching_ttl_time** | **int** | TTL캐싱 | [optional] 
 **is_query_string_ignore_use** | **bool** | 쿼리스트링무시여부 | [optional] 
 **is_remove_vary_header_use** | **bool** | 헤더제거사용여부 | [optional] 
 **is_large_file_optimization_use** | **bool** | 대용량파일최적화사용여부 | [optional] 

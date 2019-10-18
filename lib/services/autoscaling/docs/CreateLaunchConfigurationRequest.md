@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **access_control_group_configuration_no_list** | **list[str]** | ACG설정번호리스트 | [optional] 
 **login_key_name** | **str** | 로그인키명 | [optional] 
 **user_data** | **str** | 사용자데이터 | [optional] 
+**region_no** | **str** | 리전번호 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **public_ip_instance_no** | **str** | 공인IP인스턴스번호 | [optional] 
-**publicl_ip** | **str** | 공인IP | [optional] 
+**public_ip** | **str** | 공인IP | [optional] 
 **public_ip_description** | **str** | 공인IP설명 | [optional] 
 **create_date** | **str** | 생성일시 | [optional] 
 **internet_line_type** | [**CommonCode**](CommonCode.md) | 인터넷라인구분 | [optional] 
