@@ -37,6 +37,7 @@ Method | HTTP request | Description
 [**get_access_control_rule_list**](V2Api.md#get_access_control_rule_list) | **POST** /getAccessControlRuleList | 
 [**get_block_storage_instance_list**](V2Api.md#get_block_storage_instance_list) | **POST** /getBlockStorageInstanceList | 
 [**get_block_storage_snapshot_instance_list**](V2Api.md#get_block_storage_snapshot_instance_list) | **POST** /getBlockStorageSnapshotInstanceList | 
+[**get_init_script_list**](V2Api.md#get_init_script_list) | **POST** /getInitScriptList | 
 [**get_instance_tag_list**](V2Api.md#get_instance_tag_list) | **POST** /getInstanceTagList | 
 [**get_login_key_list**](V2Api.md#get_login_key_list) | **POST** /getLoginKeyList | 
 [**get_member_server_image_list**](V2Api.md#get_member_server_image_list) | **POST** /getMemberServerImageList | 
@@ -59,6 +60,7 @@ Method | HTTP request | Description
 [**reboot_server_instances**](V2Api.md#reboot_server_instances) | **POST** /rebootServerInstances | 
 [**recreate_server_instance**](V2Api.md#recreate_server_instance) | **POST** /recreateServerInstance | 
 [**remove_nas_volume_access_control**](V2Api.md#remove_nas_volume_access_control) | **POST** /removeNasVolumeAccessControl | 
+[**replace_server_instance_associated_with_public_ip**](V2Api.md#replace_server_instance_associated_with_public_ip) | **POST** /replaceServerInstanceAssociatedWithPublicIp | 
 [**set_nas_volume_access_control**](V2Api.md#set_nas_volume_access_control) | **POST** /setNasVolumeAccessControl | 
 [**start_server_instances**](V2Api.md#start_server_instances) | **POST** /startServerInstances | 
 [**stop_server_instances**](V2Api.md#stop_server_instances) | **POST** /stopServerInstances | 
@@ -1550,6 +1552,51 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_init_script_list**
+> GetInitScriptListResponse get_init_script_list(get_init_script_list_rqeust)
+
+
+
+초기화스크립트리스트조회
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+get_init_script_list_rqeust = ncloud_server.GetInitScriptListRequest() # GetInitScriptListRequest | getInitScriptListRqeust
+
+try:
+    api_response = api_instance.get_init_script_list(get_init_script_list_rqeust)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->get_init_script_list: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **get_init_script_list_rqeust** | [**GetInitScriptListRequest**](GetInitScriptListRequest.md)| getInitScriptListRqeust | 
+
+### Return type
+
+[**GetInitScriptListResponse**](GetInitScriptListResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_instance_tag_list**
 > GetInstanceTagListResponse get_instance_tag_list(get_instance_tag_list_request)
 
@@ -2532,6 +2579,51 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RemoveNasVolumeAccessControlResponse**](RemoveNasVolumeAccessControlResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **replace_server_instance_associated_with_public_ip**
+> ReplaceServerInstanceAssociatedWithPublicIpResponse replace_server_instance_associated_with_public_ip(replace_server_instance_associated_with_public_ip_request)
+
+
+
+공인IP서버인스턴스교체
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+replace_server_instance_associated_with_public_ip_request = ncloud_server.ReplaceServerInstanceAssociatedWithPublicIpRequest() # ReplaceServerInstanceAssociatedWithPublicIpRequest | replaceServerInstanceAssociatedWithPublicIpRequest
+
+try:
+    api_response = api_instance.replace_server_instance_associated_with_public_ip(replace_server_instance_associated_with_public_ip_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->replace_server_instance_associated_with_public_ip: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replace_server_instance_associated_with_public_ip_request** | [**ReplaceServerInstanceAssociatedWithPublicIpRequest**](ReplaceServerInstanceAssociatedWithPublicIpRequest.md)| replaceServerInstanceAssociatedWithPublicIpRequest | 
+
+### Return type
+
+[**ReplaceServerInstanceAssociatedWithPublicIpResponse**](ReplaceServerInstanceAssociatedWithPublicIpResponse.md)
 
 ### HTTP request headers
 
