@@ -15,10 +15,12 @@ Name | Type | Description | Notes
 **internet_line_type_code** | **str** | 인터넷라인구분코드 | [optional] 
 **fee_system_type_code** | **str** | 요금제구분코드 | [optional] 
 **user_data** | **str** | 사용자데이터 | [optional] 
+**init_script_no** | **str** | 초기화스크립트번호 | [optional] 
 **zone_no** | **str** | ZONE번호 | [optional] 
 **access_control_group_configuration_no_list** | **list[str]** | ACG설정번호리스트 | [optional] 
 **raid_type_name** | **str** | RAID구분이름 | [optional] 
 **instance_tag_list** | [**list[InstanceTagParameter]**](InstanceTagParameter.md) | 인스턴스태그리스트 | [optional] 
+**is_vaccine_install** | **bool** | 백신설치여부 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
