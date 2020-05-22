@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 
-A.메트릭 통계 조회
+B.메트릭 리스트 조회
 
 ### Example
 ```python
