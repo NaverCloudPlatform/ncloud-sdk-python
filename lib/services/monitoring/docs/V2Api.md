@@ -5,7 +5,7 @@ All URIs are relative to *https://ncloud.apigw.ntruss.com/monitoring/v2*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_list_metrics**](V2Api.md#get_list_metrics) | **POST** /getListMetrics | 
-[**get_metric_statistics**](V2Api.md#get_metric_statistics) | **POST** /getMetricStatistics | 
+[**get_metric_statistic_list**](V2Api.md#get_metric_statistic_list) | **POST** /getMetricStatisticList | 
 
 
 # **get_list_metrics**
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 
-B.메트릭 리스트 조회
+A.메트릭 통계 조회
 
 ### Example
 ```python
@@ -53,8 +53,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_metric_statistics**
-> GetMetricStatisticsResponse get_metric_statistics(get_metric_statistics_request)
+# **get_metric_statistic_list**
+> GetMetricStatisticListResponse get_metric_statistic_list(get_metric_statistic_list_request)
 
 
 
@@ -72,28 +72,28 @@ configuration = swagger_client.Configuration()
 configuration.access_key = "YOUR ACCESS KEY"
 configuration.secret_key = "YOUR SECRET KEY"
 api_instance = ncloud_monitoring.V2Api(ncloud_monitoring.ApiClient(configuration))
-get_metric_statistics_request = ncloud_monitoring.GetMetricStatisticsRequest() # GetMetricStatisticsRequest | getMetricStatisticsRequest
+get_metric_statistic_list_request = ncloud_monitoring.GetMetricStatisticListRequest() # GetMetricStatisticListRequest | getMetricStatisticListRequest
 
 try:
-    api_response = api_instance.get_metric_statistics(get_metric_statistics_request)
+    api_response = api_instance.get_metric_statistic_list(get_metric_statistic_list_request)
     print(api_response)
 except ApiException as e:
-    print("Exception when calling V2Api->get_metric_statistics: %s\n" % e)
+    print("Exception when calling V2Api->get_metric_statistic_list: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **get_metric_statistics_request** | [**GetMetricStatisticsRequest**](GetMetricStatisticsRequest.md)| getMetricStatisticsRequest | 
+ **get_metric_statistic_list_request** | [**GetMetricStatisticListRequest**](GetMetricStatisticListRequest.md)| getMetricStatisticListRequest | 
 
 ### Return type
 
-[**GetMetricStatisticsResponse**](GetMetricStatisticsResponse.md)
+[**GetMetricStatisticListResponse**](GetMetricStatisticListResponse.md)
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: Not defined
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
