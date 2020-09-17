@@ -10,3 +10,6 @@ ncloud-autoscaling >= 1.1.0
 ncloud-monitoring >= 1.1.5
 ncloud-cdn >= 1.1.0
 ncloud-clouddb >= 1.1.0
+ncloud-vserver >= 1.0.0
+ncloud-vpc >= 1.0.0
+ncloud-vnas >= 1.0.0
