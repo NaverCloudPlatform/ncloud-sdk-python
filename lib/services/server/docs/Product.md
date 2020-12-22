@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **disk_type** | [**CommonCode**](CommonCode.md) | 디스크유형 | [optional] 
 **db_kind_code** | **str** | DB유형코드 | [optional] 
 **add_block_storage_size** | **int** | 추가블록스토리지사이즈 | [optional] 
+**generation_code** | **str** | 세대코드 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

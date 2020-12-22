@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**associate_public_ip_with_server_instance**](V2Api.md#associate_public_ip_with_server_instance) | **POST** /associatePublicIpWithServerInstance | 
 [**attach_block_storage_instance**](V2Api.md#attach_block_storage_instance) | **POST** /attachBlockStorageInstance | 
 [**attach_network_interface**](V2Api.md#attach_network_interface) | **POST** /attachNetworkInterface | 
+[**change_block_storage_volume_size**](V2Api.md#change_block_storage_volume_size) | **POST** /changeBlockStorageVolumeSize | 
 [**change_nas_volume_size**](V2Api.md#change_nas_volume_size) | **POST** /changeNasVolumeSize | 
 [**change_server_instance_spec**](V2Api.md#change_server_instance_spec) | **POST** /changeServerInstanceSpec | 
 [**create_block_storage_instance**](V2Api.md#create_block_storage_instance) | **POST** /createBlockStorageInstance | 
@@ -284,6 +285,51 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AttachNetworkInterfaceResponse**](AttachNetworkInterfaceResponse.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/x-www-form-urlencoded
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **change_block_storage_volume_size**
+> ChangeBlockStorageVolumeSizeResponse change_block_storage_volume_size(change_block_storage_volume_size_request)
+
+
+
+블록스토리지볼륨사이즈변경
+
+### Example
+```python
+from __future__ import print_function
+import ncloud_server
+from ncloud_server.rest import ApiException
+
+
+# create an instance of the API class
+configuration = swagger_client.Configuration()
+configuration.access_key = "YOUR ACCESS KEY"
+configuration.secret_key = "YOUR SECRET KEY"
+api_instance = ncloud_server.V2Api(ncloud_server.ApiClient(configuration))
+change_block_storage_volume_size_request = ncloud_server.ChangeBlockStorageVolumeSizeRequest() # ChangeBlockStorageVolumeSizeRequest | changeBlockStorageVolumeSizeRequest
+
+try:
+    api_response = api_instance.change_block_storage_volume_size(change_block_storage_volume_size_request)
+    print(api_response)
+except ApiException as e:
+    print("Exception when calling V2Api->change_block_storage_volume_size: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **change_block_storage_volume_size_request** | [**ChangeBlockStorageVolumeSizeRequest**](ChangeBlockStorageVolumeSizeRequest.md)| changeBlockStorageVolumeSizeRequest | 
+
+### Return type
+
+[**ChangeBlockStorageVolumeSizeResponse**](ChangeBlockStorageVolumeSizeResponse.md)
 
 ### HTTP request headers
 

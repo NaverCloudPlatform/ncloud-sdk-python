@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **zone** | [**Zone**](Zone.md) | Zone | [optional] 
 **region** | [**Region**](Region.md) | 리전 | [optional] 
 **base_block_storage_disk_type** | [**CommonCode**](CommonCode.md) | 기본블록스토리지디스크유형 | [optional] 
-**base_block_stroage_disk_detail_type** | [**CommonCode**](CommonCode.md) | 기본블록스토리지디스크상세유형 | [optional] 
+**base_block_storage_disk_detail_type** | [**CommonCode**](CommonCode.md) | 기본블록스토리지디스크상세유형 | [optional] 
 **internet_line_type** | [**CommonCode**](CommonCode.md) | 인터넷라인구분 | [optional] 
 **server_instance_type** | [**CommonCode**](CommonCode.md) | 서버인스턴스구분 | [optional] 
 **user_data** | **str** | 사용자데이타 | [optional] 
