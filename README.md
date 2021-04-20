@@ -23,7 +23,7 @@ Python 2.7 and 3.4+
 
 ### 생성된 인증키 정보를 저장합니다.
 - Mac/Linux의 경우 ~/.ncloud/configure에, Windows의 경우 C:\Users\USERNAME\\.ncloud\configure에 인증키 정보를 저장합니다.
-- configure 파일은 [NCLOUD CLI](http://docs.ncloud.com/ko/tool/tool-3-1.html) 를 이용하여 생성할 수도 있습니다.
+- configure 파일은 [NCLOUD CLI](https://cli.ncloud-docs.com/docs/guide-userguide) 를 이용하여 생성할 수도 있습니다.
 - configure example
 ```
 ncloud_access_key_id = C9zxQyBQVqcRNQmcAXKn
