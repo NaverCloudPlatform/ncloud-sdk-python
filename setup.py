@@ -24,7 +24,7 @@ REQUIRES = ["urllib3 >= 1.15"
             , "certifi"
             , "python-dateutil"
             , "ncloud-apikey >= 1.0.5"
-            , "ncloud-server >= 1.1.2"
+            , "ncloud-server >= 1.1.3"
             , "ncloud-loadbalancer >= 1.1.1"
             , "ncloud-autoscaling >= 1.1.1"
             , "ncloud-monitoring >= 1.1.6"
@@ -32,7 +32,9 @@ REQUIRES = ["urllib3 >= 1.15"
             , "ncloud-clouddb >= 1.1.1"
             , "ncloud-vserver >= 1.0.1"
             , "ncloud-vnas >= 1.0.1"
-            , "ncloud-vpc >= 1.0.1"]
+            , "ncloud-vpc >= 1.0.1"
+            , "ncloud-vautoscaling >= 1.0.0"
+            , "ncloud-vloadbalancer >= 1.0.0"]
 
 with io.open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()

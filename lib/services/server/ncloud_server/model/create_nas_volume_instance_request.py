@@ -37,7 +37,8 @@ class CreateNasVolumeInstanceRequest(object):
         'cifs_user_password': 'str',
         'nas_volume_description': 'str',
         'region_no': 'str',
-        'zone_no': 'str'
+        'zone_no': 'str',
+        'is_return_protection': 'bool'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class CreateNasVolumeInstanceRequest(object):
         'cifs_user_password': 'cifsUserPassword',
         'nas_volume_description': 'nasVolumeDescription',
         'region_no': 'regionNo',
-        'zone_no': 'zoneNo'
+        'zone_no': 'zoneNo',
+        'is_return_protection': 'isReturnProtection'
     }
 
-    def __init__(self, volume_name=None, volume_size=None, volume_allotment_protocol_type_code=None, server_instance_no_list=None, custom_ip_list=None, cifs_user_name=None, cifs_user_password=None, nas_volume_description=None, region_no=None, zone_no=None):  # noqa: E501
+    def __init__(self, volume_name=None, volume_size=None, volume_allotment_protocol_type_code=None, server_instance_no_list=None, custom_ip_list=None, cifs_user_name=None, cifs_user_password=None, nas_volume_description=None, region_no=None, zone_no=None, is_return_protection=None):  # noqa: E501
         """CreateNasVolumeInstanceRequest - a model defined in Swagger"""  # noqa: E501
 
         self._volume_name = None
@@ -66,6 +68,7 @@ class CreateNasVolumeInstanceRequest(object):
         self._nas_volume_description = None
         self._region_no = None
         self._zone_no = None
+        self._is_return_protection = None
         self.discriminator = None
 
         self.volume_name = volume_name
@@ -85,6 +88,8 @@ class CreateNasVolumeInstanceRequest(object):
             self.region_no = region_no
         if zone_no is not None:
             self.zone_no = zone_no
+        if is_return_protection is not None:
+            self.is_return_protection = is_return_protection
 
     @property
     def volume_name(self):
@@ -321,6 +326,29 @@ class CreateNasVolumeInstanceRequest(object):
         """
 
         self._zone_no = zone_no
+
+    @property
+    def is_return_protection(self):
+        """Gets the is_return_protection of this CreateNasVolumeInstanceRequest.  # noqa: E501
+
+        반납보호여부  # noqa: E501
+
+        :return: The is_return_protection of this CreateNasVolumeInstanceRequest.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_return_protection
+
+    @is_return_protection.setter
+    def is_return_protection(self, is_return_protection):
+        """Sets the is_return_protection of this CreateNasVolumeInstanceRequest.
+
+        반납보호여부  # noqa: E501
+
+        :param is_return_protection: The is_return_protection of this CreateNasVolumeInstanceRequest.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_return_protection = is_return_protection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

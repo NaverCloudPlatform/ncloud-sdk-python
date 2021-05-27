@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **user_data** | **str** | 사용자데이타 | [optional] 
 **access_control_group_list** | [**list[AccessControlGroup]**](AccessControlGroup.md) | ACG리스트 | [optional] 
 **instance_tag_list** | [**list[InstanceTag]**](InstanceTag.md) | 인스턴스태그리스트 | [optional] 
+**block_device_partition_list** | [**list[BlockDevicePartition]**](BlockDevicePartition.md) | 블록디바이스파티션리스트 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

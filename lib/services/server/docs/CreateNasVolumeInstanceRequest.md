@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **nas_volume_description** | **str** | NAS볼륨설명 | [optional] 
 **region_no** | **str** | 리전번호 | [optional] 
 **zone_no** | **str** | ZONE번호 | [optional] 
+**is_return_protection** | **bool** | 반납보호여부 | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

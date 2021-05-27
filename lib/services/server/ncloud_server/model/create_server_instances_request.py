@@ -13,6 +13,7 @@ import re  # noqa: F401
 
 import six
 
+from ncloud_server.model.block_device_partition import BlockDevicePartition  # noqa: F401,E501
 from ncloud_server.model.instance_tag_parameter import InstanceTagParameter  # noqa: F401,E501
 
 
@@ -47,7 +48,8 @@ class CreateServerInstancesRequest(object):
         'access_control_group_configuration_no_list': 'list[str]',
         'raid_type_name': 'str',
         'instance_tag_list': 'list[InstanceTagParameter]',
-        'is_vaccine_install': 'bool'
+        'is_vaccine_install': 'bool',
+        'block_device_partition_list': 'list[BlockDevicePartition]'
     }
 
     attribute_map = {
@@ -68,10 +70,11 @@ class CreateServerInstancesRequest(object):
         'access_control_group_configuration_no_list': 'accessControlGroupConfigurationNoList',
         'raid_type_name': 'raidTypeName',
         'instance_tag_list': 'instanceTagList',
-        'is_vaccine_install': 'isVaccineInstall'
+        'is_vaccine_install': 'isVaccineInstall',
+        'block_device_partition_list': 'blockDevicePartitionList'
     }
 
-    def __init__(self, server_image_product_code=None, server_product_code=None, member_server_image_no=None, server_name=None, server_description=None, login_key_name=None, is_protect_server_termination=None, server_create_count=None, server_create_start_no=None, internet_line_type_code=None, fee_system_type_code=None, user_data=None, init_script_no=None, zone_no=None, access_control_group_configuration_no_list=None, raid_type_name=None, instance_tag_list=None, is_vaccine_install=None):  # noqa: E501
+    def __init__(self, server_image_product_code=None, server_product_code=None, member_server_image_no=None, server_name=None, server_description=None, login_key_name=None, is_protect_server_termination=None, server_create_count=None, server_create_start_no=None, internet_line_type_code=None, fee_system_type_code=None, user_data=None, init_script_no=None, zone_no=None, access_control_group_configuration_no_list=None, raid_type_name=None, instance_tag_list=None, is_vaccine_install=None, block_device_partition_list=None):  # noqa: E501
         """CreateServerInstancesRequest - a model defined in Swagger"""  # noqa: E501
 
         self._server_image_product_code = None
@@ -92,6 +95,7 @@ class CreateServerInstancesRequest(object):
         self._raid_type_name = None
         self._instance_tag_list = None
         self._is_vaccine_install = None
+        self._block_device_partition_list = None
         self.discriminator = None
 
         if server_image_product_code is not None:
@@ -130,6 +134,8 @@ class CreateServerInstancesRequest(object):
             self.instance_tag_list = instance_tag_list
         if is_vaccine_install is not None:
             self.is_vaccine_install = is_vaccine_install
+        if block_device_partition_list is not None:
+            self.block_device_partition_list = block_device_partition_list
 
     @property
     def server_image_product_code(self):
@@ -544,6 +550,29 @@ class CreateServerInstancesRequest(object):
         """
 
         self._is_vaccine_install = is_vaccine_install
+
+    @property
+    def block_device_partition_list(self):
+        """Gets the block_device_partition_list of this CreateServerInstancesRequest.  # noqa: E501
+
+        블록디바이스파티션리스트  # noqa: E501
+
+        :return: The block_device_partition_list of this CreateServerInstancesRequest.  # noqa: E501
+        :rtype: list[BlockDevicePartition]
+        """
+        return self._block_device_partition_list
+
+    @block_device_partition_list.setter
+    def block_device_partition_list(self, block_device_partition_list):
+        """Sets the block_device_partition_list of this CreateServerInstancesRequest.
+
+        블록디바이스파티션리스트  # noqa: E501
+
+        :param block_device_partition_list: The block_device_partition_list of this CreateServerInstancesRequest.  # noqa: E501
+        :type: list[BlockDevicePartition]
+        """
+
+        self._block_device_partition_list = block_device_partition_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

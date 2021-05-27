@@ -133,12 +133,14 @@ Services | Documentation | Install Command
 *Server(VPC)* | [**Server(VPC)**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/vserver/README.md) | pip install ncloud-vserver
 *VPC* | [**VPC**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/vpc/README.md) | pip install ncloud-vpc
 *Nas(VPC)* | [**Nas(VPC)**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/vnas/README.md) | pip install ncloud-vnas
+*Autoscaling(VPC)* | [**Autoscaling(VPC)**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/vautoscaling/README.md) | pip install ncloud-vautoscaling
+*Loadbalancer(VPC)* | [**Loadbalancer(VPC)**](https://github.com/NaverCloudPlatform/ncloud-sdk-python/blob/master/lib/services/vloadbalancer/README.md) | pip install ncloud-vloadbalancer
 
 
 ### License
 
 ```
-Copyright (c) 2018 NAVER BUSINESS PLATFORM Corp.
+Copyright (c) 2021 NAVER Cloud Corp.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

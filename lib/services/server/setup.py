@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "ncloud-server"
-VERSION = "1.1.2"
+VERSION = "1.1.3"
 # To install the library, run the following
 #
 # python setup.py install

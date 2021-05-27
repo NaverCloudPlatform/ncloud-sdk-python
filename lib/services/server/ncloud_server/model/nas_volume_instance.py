@@ -57,6 +57,7 @@ class NasVolumeInstance(object):
         'is_event_configuration': 'bool',
         'region': 'Region',
         'zone': 'Zone',
+        'is_return_protection': 'bool',
         'nas_volume_instance_custom_ip_list': 'list[NasVolumeInstanceCustomIp]',
         'nas_volume_server_instance_list': 'list[ServerInstance]'
     }
@@ -85,11 +86,12 @@ class NasVolumeInstance(object):
         'is_event_configuration': 'isEventConfiguration',
         'region': 'region',
         'zone': 'zone',
+        'is_return_protection': 'isReturnProtection',
         'nas_volume_instance_custom_ip_list': 'nasVolumeInstanceCustomIpList',
         'nas_volume_server_instance_list': 'nasVolumeServerInstanceList'
     }
 
-    def __init__(self, nas_volume_instance_no=None, nas_volume_instance_status=None, nas_volume_instance_operation=None, nas_volume_instance_status_name=None, create_date=None, nas_volume_instance_description=None, mount_information=None, volume_allotment_protocol_type=None, volume_name=None, volume_total_size=None, volume_size=None, volume_use_size=None, volume_use_ratio=None, snapshot_volume_configuration_ratio=None, snapshot_volume_config_period_type=None, snapshot_volume_config_time=None, snapshot_volume_size=None, snapshot_volume_use_size=None, snapshot_volume_use_ratio=None, is_snapshot_configuration=None, is_event_configuration=None, region=None, zone=None, nas_volume_instance_custom_ip_list=None, nas_volume_server_instance_list=None):  # noqa: E501
+    def __init__(self, nas_volume_instance_no=None, nas_volume_instance_status=None, nas_volume_instance_operation=None, nas_volume_instance_status_name=None, create_date=None, nas_volume_instance_description=None, mount_information=None, volume_allotment_protocol_type=None, volume_name=None, volume_total_size=None, volume_size=None, volume_use_size=None, volume_use_ratio=None, snapshot_volume_configuration_ratio=None, snapshot_volume_config_period_type=None, snapshot_volume_config_time=None, snapshot_volume_size=None, snapshot_volume_use_size=None, snapshot_volume_use_ratio=None, is_snapshot_configuration=None, is_event_configuration=None, region=None, zone=None, is_return_protection=None, nas_volume_instance_custom_ip_list=None, nas_volume_server_instance_list=None):  # noqa: E501
         """NasVolumeInstance - a model defined in Swagger"""  # noqa: E501
 
         self._nas_volume_instance_no = None
@@ -115,6 +117,7 @@ class NasVolumeInstance(object):
         self._is_event_configuration = None
         self._region = None
         self._zone = None
+        self._is_return_protection = None
         self._nas_volume_instance_custom_ip_list = None
         self._nas_volume_server_instance_list = None
         self.discriminator = None
@@ -165,6 +168,8 @@ class NasVolumeInstance(object):
             self.region = region
         if zone is not None:
             self.zone = zone
+        if is_return_protection is not None:
+            self.is_return_protection = is_return_protection
         if nas_volume_instance_custom_ip_list is not None:
             self.nas_volume_instance_custom_ip_list = nas_volume_instance_custom_ip_list
         if nas_volume_server_instance_list is not None:
@@ -698,6 +703,29 @@ class NasVolumeInstance(object):
         """
 
         self._zone = zone
+
+    @property
+    def is_return_protection(self):
+        """Gets the is_return_protection of this NasVolumeInstance.  # noqa: E501
+
+        반납보호여부  # noqa: E501
+
+        :return: The is_return_protection of this NasVolumeInstance.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_return_protection
+
+    @is_return_protection.setter
+    def is_return_protection(self, is_return_protection):
+        """Sets the is_return_protection of this NasVolumeInstance.
+
+        반납보호여부  # noqa: E501
+
+        :param is_return_protection: The is_return_protection of this NasVolumeInstance.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_return_protection = is_return_protection
 
     @property
     def nas_volume_instance_custom_ip_list(self):

@@ -14,6 +14,7 @@ import re  # noqa: F401
 import six
 
 from ncloud_server.model.access_control_group import AccessControlGroup  # noqa: F401,E501
+from ncloud_server.model.block_device_partition import BlockDevicePartition  # noqa: F401,E501
 from ncloud_server.model.common_code import CommonCode  # noqa: F401,E501
 from ncloud_server.model.instance_tag import InstanceTag  # noqa: F401,E501
 from ncloud_server.model.region import Region  # noqa: F401,E501
@@ -65,7 +66,8 @@ class ServerInstance(object):
         'server_instance_type': 'CommonCode',
         'user_data': 'str',
         'access_control_group_list': 'list[AccessControlGroup]',
-        'instance_tag_list': 'list[InstanceTag]'
+        'instance_tag_list': 'list[InstanceTag]',
+        'block_device_partition_list': 'list[BlockDevicePartition]'
     }
 
     attribute_map = {
@@ -100,10 +102,11 @@ class ServerInstance(object):
         'server_instance_type': 'serverInstanceType',
         'user_data': 'userData',
         'access_control_group_list': 'accessControlGroupList',
-        'instance_tag_list': 'instanceTagList'
+        'instance_tag_list': 'instanceTagList',
+        'block_device_partition_list': 'blockDevicePartitionList'
     }
 
-    def __init__(self, server_instance_no=None, server_name=None, server_description=None, cpu_count=None, memory_size=None, base_block_storage_size=None, platform_type=None, login_key_name=None, is_fee_charging_monitoring=None, public_ip=None, private_ip=None, server_image_name=None, server_instance_status=None, server_instance_operation=None, server_instance_status_name=None, create_date=None, uptime=None, server_image_product_code=None, server_product_code=None, is_protect_server_termination=None, port_forwarding_public_ip=None, port_forwarding_external_port=None, port_forwarding_internal_port=None, zone=None, region=None, base_block_storage_disk_type=None, base_block_storage_disk_detail_type=None, internet_line_type=None, server_instance_type=None, user_data=None, access_control_group_list=None, instance_tag_list=None):  # noqa: E501
+    def __init__(self, server_instance_no=None, server_name=None, server_description=None, cpu_count=None, memory_size=None, base_block_storage_size=None, platform_type=None, login_key_name=None, is_fee_charging_monitoring=None, public_ip=None, private_ip=None, server_image_name=None, server_instance_status=None, server_instance_operation=None, server_instance_status_name=None, create_date=None, uptime=None, server_image_product_code=None, server_product_code=None, is_protect_server_termination=None, port_forwarding_public_ip=None, port_forwarding_external_port=None, port_forwarding_internal_port=None, zone=None, region=None, base_block_storage_disk_type=None, base_block_storage_disk_detail_type=None, internet_line_type=None, server_instance_type=None, user_data=None, access_control_group_list=None, instance_tag_list=None, block_device_partition_list=None):  # noqa: E501
         """ServerInstance - a model defined in Swagger"""  # noqa: E501
 
         self._server_instance_no = None
@@ -138,6 +141,7 @@ class ServerInstance(object):
         self._user_data = None
         self._access_control_group_list = None
         self._instance_tag_list = None
+        self._block_device_partition_list = None
         self.discriminator = None
 
         if server_instance_no is not None:
@@ -204,6 +208,8 @@ class ServerInstance(object):
             self.access_control_group_list = access_control_group_list
         if instance_tag_list is not None:
             self.instance_tag_list = instance_tag_list
+        if block_device_partition_list is not None:
+            self.block_device_partition_list = block_device_partition_list
 
     @property
     def server_instance_no(self):
@@ -940,6 +946,29 @@ class ServerInstance(object):
         """
 
         self._instance_tag_list = instance_tag_list
+
+    @property
+    def block_device_partition_list(self):
+        """Gets the block_device_partition_list of this ServerInstance.  # noqa: E501
+
+        블록디바이스파티션리스트  # noqa: E501
+
+        :return: The block_device_partition_list of this ServerInstance.  # noqa: E501
+        :rtype: list[BlockDevicePartition]
+        """
+        return self._block_device_partition_list
+
+    @block_device_partition_list.setter
+    def block_device_partition_list(self, block_device_partition_list):
+        """Sets the block_device_partition_list of this ServerInstance.
+
+        블록디바이스파티션리스트  # noqa: E501
+
+        :param block_device_partition_list: The block_device_partition_list of this ServerInstance.  # noqa: E501
+        :type: list[BlockDevicePartition]
+        """
+
+        self._block_device_partition_list = block_device_partition_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""
