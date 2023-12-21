@@ -11,7 +11,7 @@ import io
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "ncloud-sdk"
-VERSION = "1.1.9"
+VERSION = "1.1.10"
 # To install the library, run the following
 #
 # python setup.py install
@@ -27,7 +27,6 @@ REQUIRES = ["urllib3 >= 1.15"
             , "ncloud-server >= 1.1.3"
             , "ncloud-loadbalancer >= 1.1.1"
             , "ncloud-autoscaling >= 1.1.1"
-            , "ncloud-monitoring >= 1.1.6"
             , "ncloud-cdn >= 1.1.1"
             , "ncloud-clouddb >= 1.1.1"
             , "ncloud-vserver >= 1.0.1"
